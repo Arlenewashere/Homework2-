@@ -1,0 +1,36 @@
+package pkg37.b;
+import java.util.Scanner;
+/**
+ *
+ * @author arlenegonzalez
+ */
+public class B {
+
+ 
+  
+    public static void main(String[] args) {
+        
+       
+        
+        Scanner input = new Scanner(System.in);
+        
+        int num;
+        int total=1;
+        double e = 1;
+      
+        System.out.println("Please enter a nonnegative number: ");
+        num=input.nextInt();
+        
+        while(num>0)
+        {
+           e= (e+(1.0/(total=total*num)));
+            num--;
+        
+        }
+        
+        
+        System.out.printf("%ntotal%s%n ", e);
+    }
+    
+    
+}
