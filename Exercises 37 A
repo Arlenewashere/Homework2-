@@ -1,0 +1,28 @@
+package hw37;
+
+import java.util.Scanner;
+public class Hw37 {
+
+
+
+    
+    public static void main(String[] args) {
+       
+        
+        Scanner input = new Scanner(System.in);
+        
+        int num;
+        int total=1;
+      
+        System.out.println("Please enter a nonnegative number: ");
+        num=input.nextInt();
+        
+        while(num>0)
+        {
+            total=total*num;
+            num--;
+        
+        }
+          System.out.printf("%ntotal %d%n", total);
+    }
+}
