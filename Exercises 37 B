@@ -14,14 +14,19 @@ public class B {
         
         Scanner input = new Scanner(System.in);
         
+        int term;
         int num;
         int total=1;
         double e = 0;
       
-        System.out.println("Please enter a nonnegative number: ");
+        System.out.println("Please enter a nonnegative term: ");
         num=input.nextInt();
         
-        while(num>0)
+        for (term>=0){
+         num = term + 1;
+        
+        while (num >0);
+        
         {
         total=total*num;
         
@@ -31,6 +36,7 @@ public class B {
            
             num--;
         
+        }
         }
         
         
