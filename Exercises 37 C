@@ -1,39 +1,26 @@
-package pkg37c;
 
-/**
- *
- * @author arlenegonzalez
- */
+package javahomework;
+
 import java.util.Scanner;
-public class Main {
 
-    
-    /**
-     * @param args the command line arguments
-     */
+public class JavaHomework {
+
     public static void main(String[] args) {
+  Scanner input = new Scanner(System.in);
         
-       
-        
-        Scanner input = new Scanner(System.in);
-        
-        int num;
-        int total=1;
-        double e = 1;
-      
-        System.out.println("Please enter a nonnegative number: ");
-        num=input.nextInt();
-        
-        while(num>0)
-        {
-           e= Math.pow(e,num)+(1.0/(total=total*num));
-            num--;
-        
+        int num=1;
+        int term;
+        double e=1;
+        int x=1;
+        System.out.println("Please enter a term: ");
+        term=input.nextInt();
+        int y=input.nextInt();
+        for(int i=1; i<term; i++){
+            num*=i;
+            x*=y;
+            e+=(x/num);
+         
         }
-        
-        
-        System.out.printf("%ntotal%s%n ", e);
-    }
-    
-    
+        System.out.printf("%ne%s%n", e);
+}
 }
