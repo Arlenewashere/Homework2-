@@ -1,47 +1,25 @@
-package pkg37.b;
-import java.util.Scanner;
-/**
- *
- * @author arlenegonzalez
- */
-public class B {
 
- 
-  
+package javahomework;
+
+import java.util.Scanner;
+
+public class JavaHomework {
+
     public static void main(String[] args) {
+  Scanner input = new Scanner(System.in);
         
-       
-        
-        Scanner input = new Scanner(System.in);
-        
+        int num=1;
         int term;
-        int num;
-        int total=1;
-        double e = 0;
-      
-        System.out.println("Please enter a nonnegative term: ");
-        num=input.nextInt();
-        
-        for (term>=0){
-         num = term + 1;
-        
-        while (num >0);
-        
-        {
-        total=total*num;
-        
-        if (total >0) {
-           e= (e+(1.0/total);
-           }
-           
-            num--;
-        
+        double e=1.0;
+        System.out.println("Please enter a term: ");
+        term=input.nextInt();
+        for(int i=1; i<term; i++){
+            num*=i;
+            
+            e+=(1d/num);
+         
+
         }
-        }
-        
-        
-        System.out.printf("%ntotal%s%n ", e);
-    }
-    
-    
+        System.out.printf("%nThe value of e is : %s%n", e);
+}
 }
